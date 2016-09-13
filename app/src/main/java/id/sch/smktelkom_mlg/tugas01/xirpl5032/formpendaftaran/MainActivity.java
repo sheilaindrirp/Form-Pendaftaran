@@ -56,12 +56,6 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (hasil.length() == startlen) hasil += "Tidak Memilih";
-
-                tvHasil.setText(
-                        "\nNama Anda :" + nama
-                                + "\n\nEkstra yang dipilih :"
-                                + Eskul.getSelectedItem().toString()
-                                + hasil + "\n\nKelas Anda:" + level);
             }
 
 
