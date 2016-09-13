@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kategori">
+        <item>None</item>
+        <item>Paduan Suara</item>
+        <item>Basket</item>
+        <item>Volly</item>
+        <item>Badminton</item>
+        <item>SBA</item>
+        <item>Melukis</item>
+        <item>Pramuka</item>
+        <item>Fiber Optic</item>
+        <item>Pecinta Alam</item>
+        <item>English Debate</item>
+        <item>Futsal</item>
+    </string-array>
+
+</resources>
+
