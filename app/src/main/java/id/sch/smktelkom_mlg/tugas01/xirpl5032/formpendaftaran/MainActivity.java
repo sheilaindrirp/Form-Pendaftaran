@@ -44,62 +44,27 @@ public class MainActivity extends AppCompatActivity {
 
                 String nama = Name.getText().toString();
                 String hasil = "\n\nJurusan Anda:";
-                String level = null;
+                String kelas = null;
                 int startlen = hasil.length();
                 if (Check1.isChecked()) hasil += Check1.getText() + "\n";
                 if (Check2.isChecked()) hasil += Check2.getText() + "\n";
 
                 if (R2.isChecked()) {
-                    level = R2.getText().toString();
+                    kelas = R2.getText().toString();
                 } else if (R1.isChecked()) {
-                    level = R1.getText().toString();
+                    kelas = R1.getText().toString();
                 }
 
                 if (hasil.length() == startlen) hasil += "Tidak Memilih";
-
+                tvHasil.setText(
+                        "\nNama Anda :" + nama
+                                + "\n\nEkstra yang dipilih :"
+                                + Eskul.getSelectedItem().toString()
+                                + hasil + "\n\nKelas Anda:" + kelas);
             }
 
 
         });
-    }
-
-    private boolean isValid() {
-
-        boolean valid = true;
-
-        String email = Mail.getText().toString();
-        String password = Pass.getText().toString();
-        String nama = Name.getText().toString();
-
-
-        if (nama.isEmpty()) {
-            Name.setError("Nama Kosong");
-            valid = false;
-        } else if (nama.length() < 8) {
-            Name.setError("Minimal 8 Karakter");
-            valid = false;
-        } else {
-            Name.setError(null);
-        }
-        if (email.isEmpty()) {
-            Mail.setError("e-Mail Belum Diisi");
-            valid = false;
-        } else if (email.length() < 4) {
-            Mail.setError("Format Salah");
-            valid = false;
-        } else {
-            Name.setError(null);
-        }
-        if (password.isEmpty()) {
-            Pass.setError("Kata Sandi Kosong");
-            valid = false;
-        } else if (password.length() < 8) {
-            Pass.setError("Kata Sandi Lemah");
-            valid = false;
-        }
-
-
-        return valid;
     }
 
 }
