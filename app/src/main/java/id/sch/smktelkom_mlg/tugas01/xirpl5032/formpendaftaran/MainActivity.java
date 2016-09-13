@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (hasil.length() == startlen) hasil += "Tidak Memilih";
+
             }
 
 
